@@ -3,15 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Pokemon</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <h1>Hello</h1>
-    <p>hello iam,<b> Nitin Chavan</b></p>
-    <ol>
-      <li>Harsh</li>
-      <li>Sarthak</li>
-      <li>Rithik</li>
-    </ol>
+    <!-- MAIN CONTAINER -->
+    <div class="slider">
+      <!-- PAGE 1 -->
+      <section class="slide">
+        <!-- LEFT -->
+        <div class="left yellow">
+          <img
+            class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
+          />
+          <div class="side-dots">
+            <span class="active-dot"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="content">
+            <p class="small-title">POKEMON GEN I</p>
+
+            <h1>Pikachu</h1>
+
+            <p class="desc">
+              Pikachu is an Electric-type Pokémon introduced in Generation I.
+            </p>
+
+            <div class="count">01 / 05</div>
+          </div>
+
+          <div class="menu">☰</div>
+
+          <!-- POKEBALL -->
+          <img src="images/pokeball.png" class="pokeball" />
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right cream">
+          <img class="pokemon" src="images/pikachu.png" />
+        </div>
+      </section>
+
+      <!-- PAGE 2 -->
+      <section class="slide">
+        <div class="left orange">
+          <img
+            class="logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg"
+          />
+
+          <div class="content">
+            <p class="small-title">POKEMON GEN I</p>
+
+            <h1>Charizard</h1>
+
+            <p class="desc">
+              Charizard flies around the sky searching for powerful opponents.
+            </p>
+
+            <div class="count">02 / 05</div>
+          </div>
+
+          <img src="images/pokeball.png" class="pokeball" />
+        </div>
+
+        <div class="right light-orange">
+          <img class="pokemon" src="images/charizard.png" />
+        </div>
+      </section>
+    </div>
   </body>
 </html>

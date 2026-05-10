@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background: #eee;
+
+  scroll-behavior: smooth;
+}
+
+/* SLIDER */
+
+.slider {
+  width: calc(100% - 60px);
+
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  border-radius: 25px;
+}
+
+/* EACH SLIDE */
+
+.slide {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 35px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* LEFT */
+
+.left {
+  width: 60%;
+
+  padding: 50px 70px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* RIGHT */
+
+.right {
+  width: 40%;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: visible;
+}
+
+/* LOGO */
+
+.logo {
+  width: 180px;
+
+  position: absolute;
+
+  top: 40px;
+  left: 50px;
+
+  z-index: 10;
+}
+
+/* CONTENT */
+
+.content {
+  width: 70%;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+/* SMALL TITLE */
+
+.small-title {
+  letter-spacing: 8px;
+
+  font-size: 14px;
+
+  margin-bottom: 30px;
+
+  font-weight: 500;
+}
+
+/* MAIN TITLE */
+
+.content h1 {
+  font-size: 120px;
+
+  line-height: 110px;
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+}
+
+/* DESCRIPTION */
+
+.desc {
+  font-size: 24px;
+
+  line-height: 42px;
+
+  color: #333;
+}
+
+/* COUNT */
+
+.count {
+  margin-top: 100px;
+
+  font-size: 40px;
+
+  font-weight: 600;
+}
+
+/* POKEMON IMAGE */
+
+.pokemon {
+  width: 520px;
+
+  max-width: none;
+
+  object-fit: contain;
+
+  position: absolute;
+
+  left: -140px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 999;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* POKEBALL */
+
+.pokeball {
+  width: 350px;
+
+  position: absolute;
+
+  bottom: -40px;
+  left: -40px;
+
+  opacity: 0.15;
+
+  z-index: 1;
+
+  transform: rotate(-20deg);
+}
+
+/* COLORS */
+
+.yellow {
+  background: #ffd500;
+}
+
+.cream {
+  background: #f4dd77;
+}
+
+.orange {
+  background: #ff8c42;
+}
+
+.light-orange {
+  background: #ffd2b5;
+}
+
+.green {
+  background: #84c57c;
+}
+
+.light-green {
+  background: #d8f0d3;
+}
+
+.blue {
+  background: #6cb8ff;
+}
+
+.light-blue {
+  background: #d8efff;
+}
+
+.brown {
+  background: #c28f65;
+}
+
+.light-brown {
+  background: #f1ddcb;
+}
+
+/* MENU ICON */
+
+.menu {
+  position: fixed;
+
+  top: 40px;
+  right: 40px;
+
+  font-size: 55px;
+
+  font-weight: 300;
+
+  z-index: 1000;
+
+  cursor: pointer;
+
+  color: black;
+}
+
+/* SIDE DOTS */
+
+.side-dots {
+  position: fixed;
+
+  right: 55px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  z-index: 9999;
+}
+
+/* DOT */
+
+.side-dots span {
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #f3c400;
+
+  opacity: 0.6;
+}
+
+/* ACTIVE DOT */
+
+.side-dots .active-dot {
+  background: black;
+
+  opacity: 1;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+
+  border-radius: 10px;
+}
